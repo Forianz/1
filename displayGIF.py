@@ -15,7 +15,7 @@ https://gist.github.com/BigglesZX/4016539
 from PIL import Image
 import os
 import time
-from rgbmatrix import Adafruit_RGBmatrix
+from rgbmatrix import RGBmatrix
 
 
 def analyseImage(path):
