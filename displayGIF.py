@@ -15,7 +15,7 @@ https://gist.github.com/BigglesZX/4016539
 from PIL import Image
 import os
 import time
-from rgbmatrix import RGBMatrix
+from rgbmatrix import Adafruit_RGBMatrix
 
 
 def analyseImage(path):
@@ -90,7 +90,7 @@ def processImage(path):
 
 def main():
     frames = processImage('/home/pi/rpi-matrix-gif/myGIF.gif')
-    matrix = RGBMatrix(32, 1)
+    matrix = Adafruit_RGBMatrix(32, 1)
     while True:
         for f in frames:
             matrix.SetImage(f.im.id, 0, 0)
