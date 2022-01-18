@@ -12,7 +12,7 @@ https://gist.github.com/BigglesZX/4016539
 """
 
 
-import Image
+from PIL import Image
 import os
 import time
 from rgbmatrix import Adafruit_RGBmatrix
