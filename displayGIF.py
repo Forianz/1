@@ -90,7 +90,7 @@ def processImage(path):
 
 def main():
     frames = processImage('/home/pi/rpi-matrix-gif/myGIF.gif')
-    matrix = RGBmatrix(32, 1)
+    matrix = RGBMatrix(32, 1)
     while True:
         for f in frames:
             matrix.SetImage(f.im.id, 0, 0)
